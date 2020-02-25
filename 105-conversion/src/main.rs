@@ -100,7 +100,10 @@ fn convert_to_string() {
 // to arrange for type inference
 // or to specify the type to parse using the 'turbofish' syntax.
 // Both alternatives are shown in the following example.
-// This will convert the string into the type specified so long as the FromStr trait is implemented for that type. This is implemented for numerous types within the standard library. To obtain this functionality on a user defined type simply implement the FromStr trait for that type.
+// This will convert the string into the type specified so long as the FromStr
+// trait is implemented for that type. This is implemented for numerous types
+// within the standard library. To obtain this functionality on a user defined type
+// simply implement the FromStr trait for that type.
 
 fn parsing_a_string() {
     let parsed: i32 = "5".parse().unwrap();
